@@ -1,0 +1,7 @@
+.venv/
+dataset/test/
+repo/build/
+repo/dist/
+repo/mask_rcnn.egg-info/
+mask_rcnn_coco.h5
+.DS_Store

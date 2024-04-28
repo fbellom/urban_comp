@@ -1,0 +1,344 @@
+{
+  "G0120263.JPG3306816": {
+    "filename": "G0120263.JPG",
+    "size": 3306816,
+    "regions": [
+      {
+        "shape_attributes": {
+          "name": "polygon",
+          "all_points_x": [
+            879, 864, 886, 961, 1146, 1229, 1264, 1250, 1221, 1025, 964, 950
+          ],
+          "all_points_y": [
+            1457, 1561, 1600, 1600, 1607, 1568, 1471, 1414, 1354, 1346, 1418,
+            1414
+          ]
+        },
+        "region_attributes": { "names": "car" }
+      },
+      {
+        "shape_attributes": {
+          "name": "polygon",
+          "all_points_x": [
+            1271, 1543, 1618, 1618, 1586, 1546, 1371, 1318, 1271, 1282
+          ],
+          "all_points_y": [
+            1600, 1600, 1557, 1475, 1436, 1382, 1375, 1436, 1486, 1600
+          ]
+        },
+        "region_attributes": { "names": "car" }
+      },
+      {
+        "shape_attributes": {
+          "name": "polygon",
+          "all_points_x": [
+            2375, 2568, 2814, 2814, 2739, 2661, 2475, 2425, 2364, 2354
+          ],
+          "all_points_y": [
+            1561, 1614, 1611, 1500, 1443, 1396, 1396, 1439, 1461, 1525
+          ]
+        },
+        "region_attributes": { "names": "car" }
+      },
+      {
+        "shape_attributes": {
+          "name": "polygon",
+          "all_points_x": [68, 400, 479, 468, 421, 393, 232, 171, 107],
+          "all_points_y": [1561, 1546, 1546, 1457, 1429, 1389, 1389, 1418, 1486]
+        },
+        "region_attributes": { "names": "car" }
+      },
+      {
+        "shape_attributes": {
+          "name": "polygon",
+          "all_points_x": [1693, 1982, 2050, 1664],
+          "all_points_y": [1568, 1571, 1664, 1661]
+        },
+        "region_attributes": { "names": "parking_spot" }
+      },
+      {
+        "shape_attributes": {
+          "name": "polygon",
+          "all_points_x": [3346, 3450, 3586, 3586, 3539, 3407, 3375, 3321],
+          "all_points_y": [1507, 1521, 1521, 1454, 1414, 1400, 1429, 1446]
+        },
+        "region_attributes": { "names": "car" }
+      },
+      {
+        "shape_attributes": {
+          "name": "polygon",
+          "all_points_x": [482, 700, 864, 768],
+          "all_points_y": [1618, 1554, 1557, 1636]
+        },
+        "region_attributes": { "names": "parking_spot" }
+      },
+      {
+        "shape_attributes": {
+          "name": "polygon",
+          "all_points_x": [2082, 2146, 2489, 2282],
+          "all_points_y": [1579, 1664, 1657, 1554]
+        },
+        "region_attributes": { "names": "parking_spot" }
+      }
+    ],
+    "file_attributes": {}
+  },
+  "G0150279.JPG3682259": {
+    "filename": "G0150279.JPG",
+    "size": 3682259,
+    "regions": [
+      {
+        "shape_attributes": {
+          "name": "polygon",
+          "all_points_x": [1668, 2357, 3511, 2811],
+          "all_points_y": [1964, 2646, 1739, 1618]
+        },
+        "region_attributes": { "names": "parking_spot" }
+      },
+      {
+        "shape_attributes": {
+          "name": "polygon",
+          "all_points_x": [1386, 1614, 2789, 2393],
+          "all_points_y": [1689, 1943, 1607, 1504]
+        },
+        "region_attributes": { "names": "parking_spot" }
+      },
+      {
+        "shape_attributes": {
+          "name": "polygon",
+          "all_points_x": [1268, 1357, 2379, 2071],
+          "all_points_y": [1575, 1679, 1496, 1411]
+        },
+        "region_attributes": { "names": "parking_spot" }
+      },
+      {
+        "shape_attributes": {
+          "name": "polygon",
+          "all_points_x": [3286, 3357, 3343, 3293, 3268],
+          "all_points_y": [1354, 1357, 1143, 1121, 1164]
+        },
+        "region_attributes": { "names": "person" }
+      }
+    ],
+    "file_attributes": {}
+  },
+  "G0160289.JPG3219312": {
+    "filename": "G0160289.JPG",
+    "size": 3219312,
+    "regions": [
+      {
+        "shape_attributes": {
+          "name": "polygon",
+          "all_points_x": [936, 1296, 2543, 1954],
+          "all_points_y": [1986, 2300, 1732, 1675]
+        },
+        "region_attributes": { "names": "parking_spot" }
+      },
+      {
+        "shape_attributes": {
+          "name": "polygon",
+          "all_points_x": [1368, 2661, 2818, 3246, 3436, 2750],
+          "all_points_y": [2350, 3000, 2943, 2986, 1671, 1664]
+        },
+        "region_attributes": { "names": "parking_spot" }
+      },
+      {
+        "shape_attributes": {
+          "name": "polygon",
+          "all_points_x": [789, 918, 1936, 1643],
+          "all_points_y": [1814, 1950, 1664, 1621]
+        },
+        "region_attributes": { "names": "parking_spot" }
+      }
+    ],
+    "file_attributes": {}
+  },
+  "G0180300.JPG3886115": {
+    "filename": "G0180300.JPG",
+    "size": 3886115,
+    "regions": [
+      {
+        "shape_attributes": {
+          "name": "polygon",
+          "all_points_x": [
+            1625, 1704, 1636, 1671, 1725, 1686, 1664, 1589, 1554, 1561, 1500,
+            1500, 1575, 1554
+          ],
+          "all_points_y": [
+            1646, 1614, 1489, 1336, 1300, 1193, 1082, 1071, 1082, 1182, 1211,
+            1289, 1336, 1432
+          ]
+        },
+        "region_attributes": { "names": "person" }
+      },
+      {
+        "shape_attributes": {
+          "name": "polygon",
+          "all_points_x": [
+            3254, 3200, 3161, 3171, 3200, 3214, 3243, 3186, 3211, 3246, 3282,
+            3332, 3286, 3314, 3325, 3307, 3300, 3254
+          ],
+          "all_points_y": [
+            1168, 1243, 1346, 1364, 1314, 1386, 1432, 1514, 1543, 1482, 1546,
+            1511, 1418, 1314, 1243, 1200, 1154, 1154
+          ]
+        },
+        "region_attributes": { "names": "person" }
+      },
+      {
+        "shape_attributes": {
+          "name": "polygon",
+          "all_points_x": [
+            3614, 3643, 3664, 3686, 3646, 3614, 3600, 3593, 3604
+          ],
+          "all_points_y": [1482, 1479, 1339, 1257, 1218, 1239, 1296, 1346, 1461]
+        },
+        "region_attributes": { "names": "person" }
+      },
+      {
+        "shape_attributes": {
+          "name": "polygon",
+          "all_points_x": [
+            2736, 2893, 2950, 2950, 2868, 2789, 2768, 2704, 2718
+          ],
+          "all_points_y": [1257, 1261, 1239, 1200, 1182, 1164, 1189, 1200, 1246]
+        },
+        "region_attributes": { "names": "car" }
+      },
+      {
+        "shape_attributes": {
+          "name": "polygon",
+          "all_points_x": [807, 900, 986, 986, 946, 893, 825, 793, 793],
+          "all_points_y": [1300, 1296, 1282, 1243, 1218, 1182, 1189, 1225, 1257]
+        },
+        "region_attributes": { "names": "car" }
+      },
+      {
+        "shape_attributes": {
+          "name": "polygon",
+          "all_points_x": [
+            1157, 1336, 1371, 1371, 1307, 1214, 1175, 1146, 1125, 1146
+          ],
+          "all_points_y": [
+            1264, 1246, 1218, 1204, 1196, 1182, 1204, 1218, 1239, 1250
+          ]
+        },
+        "region_attributes": { "names": "car" }
+      },
+      {
+        "shape_attributes": {
+          "name": "polygon",
+          "all_points_x": [3825, 3843, 3918, 3982, 3982, 3964, 3889, 3864],
+          "all_points_y": [1293, 1336, 1339, 1329, 1279, 1254, 1246, 1264]
+        },
+        "region_attributes": { "names": "car" }
+      },
+      {
+        "shape_attributes": {
+          "name": "polygon",
+          "all_points_x": [
+            3329, 3521, 3543, 3500, 3404, 3339, 3186, 3143, 3143, 3307
+          ],
+          "all_points_y": [
+            1396, 1393, 1318, 1268, 1218, 1218, 1214, 1289, 1371, 1393
+          ]
+        },
+        "region_attributes": { "names": "car" }
+      },
+      {
+        "shape_attributes": {
+          "name": "polygon",
+          "all_points_x": [2479, 2571, 2661, 2639, 2532, 2500, 2479],
+          "all_points_y": [1236, 1268, 1264, 1186, 1175, 1189, 1200]
+        },
+        "region_attributes": { "names": "car" }
+      }
+    ],
+    "file_attributes": {}
+  },
+  "G0180307.JPG3900840": {
+    "filename": "G0180307.JPG",
+    "size": 3900840,
+    "regions": [
+      {
+        "shape_attributes": {
+          "name": "polygon",
+          "all_points_x": [
+            421, 507, 479, 539, 607, 614, 693, 679, 564, 554, 554, 532, 493,
+            439, 418, 400, 396, 411
+          ],
+          "all_points_y": [
+            1714, 1718, 1668, 1671, 1657, 1704, 1689, 1657, 1525, 1389, 1268,
+            1193, 1121, 1121, 1229, 1339, 1429, 1454
+          ]
+        },
+        "region_attributes": { "names": "person" }
+      },
+      {
+        "shape_attributes": {
+          "name": "polygon",
+          "all_points_x": [
+            671, 664, 700, 743, 821, 943, 1121, 1218, 1264, 1354, 1379, 1336,
+            1193, 1086, 914, 839
+          ],
+          "all_points_y": [
+            1296, 1418, 1443, 1475, 1464, 1461, 1454, 1464, 1436, 1429, 1346,
+            1307, 1275, 1221, 1218, 1232
+          ]
+        },
+        "region_attributes": { "names": "car" }
+      },
+      {
+        "shape_attributes": {
+          "name": "polygon",
+          "all_points_x": [
+            2121, 2232, 2271, 2346, 2414, 2339, 2332, 2336, 2289, 2232, 2186,
+            2200, 2200, 2236, 2204, 2175, 2171
+          ],
+          "all_points_y": [
+            1571, 1571, 1418, 1561, 1557, 1414, 1293, 1168, 1082, 1082, 1132,
+            1193, 1261, 1332, 1421, 1486, 1518
+          ]
+        },
+        "region_attributes": { "names": "person" }
+      },
+      {
+        "shape_attributes": {
+          "name": "polygon",
+          "all_points_x": [
+            3021, 2986, 3057, 3086, 3157, 3161, 3246, 3264, 3386, 3418, 3443,
+            3450, 3457, 3371, 3361, 3275, 3186, 3139
+          ],
+          "all_points_y": [
+            1161, 1379, 1379, 1343, 1343, 1396, 1396, 1361, 1361, 1400, 1368,
+            1325, 1279, 1250, 1189, 1168, 1164, 1164
+          ]
+        },
+        "region_attributes": { "names": "car" }
+      },
+      {
+        "shape_attributes": {
+          "name": "polygon",
+          "all_points_x": [
+            3704, 3664, 3675, 3796, 3882, 3918, 3918, 3918, 3889, 3871, 3836,
+            3782, 3725
+          ],
+          "all_points_y": [
+            1232, 1304, 1339, 1364, 1364, 1364, 1314, 1304, 1282, 1254, 1239,
+            1229, 1229
+          ]
+        },
+        "region_attributes": { "names": "car" }
+      },
+      {
+        "shape_attributes": {
+          "name": "polygon",
+          "all_points_x": [1668, 1632, 1664, 1782, 1786, 1779, 1700, 1675],
+          "all_points_y": [1182, 1236, 1261, 1257, 1218, 1171, 1171, 1175]
+        },
+        "region_attributes": { "names": "car" }
+      }
+    ],
+    "file_attributes": {}
+  }
+}
