@@ -74,7 +74,7 @@ class CustomDataset(utils.Dataset):
         assert subset in ["train", "val"]
         dataset_dir = os.path.join(dataset_dir, subset)
 
-        with open(f"{dataset_dir}\\{subset}.json", "r") as file:
+        with open(os.join.path(dataset_dir,f"{subset}.json"), "r") as file:
             data_ann = json.loads(file.read())
 
         annotations = list(data_ann.values())
