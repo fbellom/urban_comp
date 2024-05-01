@@ -9,7 +9,8 @@ import matplotlib.pyplot as plt
 import imgaug
 
 # ROOT Directory
-ROOT_DIR = "/Users/freddybello/Documents/Workspace/python/mrcnn_tf1"
+ROOT_DIR = os.getcwd()
+DATASET_DIR = os.path.join(ROOT_DIR,'dataset')
 
 # import Mask RCNN
 sys.path.append(ROOT_DIR)
@@ -65,7 +66,7 @@ class CustomDataset(utils.Dataset):
 
         # Add Classes
 
-        self.add_class("object", 1, "Car")
+        self.add_class("object", 1, "car")
         self.add_class("object", 2, "parking_spot")
         self.add_class("object", 3, "person")
 
@@ -73,12 +74,10 @@ class CustomDataset(utils.Dataset):
         assert subset in ["train", "val"]
         dataset_dir = os.path.join(dataset_dir, subset)
 
-        annotations1 = json.loads(
-            open(
-                "/Users/freddybello/Documents/Workspace/python/mrcnn_tf1/dataset/train/train.json"
-            )
-        )
-        annotations = list(annotations1.values())
+        with open(f"{dataset_dir}\\{subset}.json", "r") as file:
+            data_ann = json.loads(file.read())
+
+        annotations = list(data_ann.values())
 
         annotations = [a for a in annotations if a["regions"]]
 
@@ -88,7 +87,7 @@ class CustomDataset(utils.Dataset):
             objects = [s["region_attributes"]["names"] for s in a["regions"]]
 
             print("objects", objects)
-            name_dict = {"Car": 1, "Parking_Spot": 2, "Person": 3}
+            name_dict = {"car": 1, "parking_spot": 2, "person": 3}
 
             # Tuples
             num_ids = [name_dict[a] for a in objects]
@@ -127,6 +126,8 @@ class CustomDataset(utils.Dataset):
 
         for i, p in enumerate(info["polygons"]):
             rr, cc = skimage.draw.polygon(p["all_points_y"], p["all_points_x"])
+            rr = np.clip(rr, 0, mask.shape[0] - 1)
+            cc = np.clip(cc, 0, mask.shape[1] - 1)
             mask[rr, cc, i] = 1
 
         # Return the mask
@@ -157,14 +158,14 @@ def train(model):
     # Training Dataset
     dataset_train = CustomDataset()
     dataset_train.load_custom(
-        "/Users/freddybello/Documents/Workspace/python/mrcnn_tf1/dataset", "train"
+        DATASET_DIR, "train"
     )
     dataset_train.prepare()
 
     # Validation
     dataset_val = CustomDataset()
     dataset_val.load_custom(
-        "/Users/freddybello/Documents/Workspace/python/mrcnn_tf1/dataset", "val"
+        DATASET_DIR, "val"
     )
     dataset_val.prepare()
 
@@ -175,21 +176,21 @@ def train(model):
         learning_rate=config.LEARNING_RATE,
         epochs=300,
         layers="heads",
-        augmentation=imgaug.augmenters.Sequential(
-            [
-                imgaug.augmenters.Fliplr(1),
-                imgaug.augmenters.Flipud(1),
-                imgaug.augmenters.Affine(rotate=(-45, 45)),
-                imgaug.augmenters.Affine(rotate=(-90, 90)),
-                imgaug.augmenters.Affine(scale=(0.5, 1.5)),
-                imgaug.augmenters.Crop(px=(0, 10)),
-                imgaug.augmenters.Grayscale(alpha=(0.0, 1.0)),
-                imgaug.augmenters.AddToHueAndSaturation((-20, 20)),
-                imgaug.augmenters.Add((-10, 10), per_channel=0.5),
-                imgaug.augmenters.Invert(0.05, per_channel=True),
-                imgaug.augmenters.Sharpen(alpha=(0, 1.0), lightness=(0.75, 1.5)),
-            ]
-        ),
+        # augmentation=imgaug.augmenters.Sequential(
+        #     [
+        #         imgaug.augmenters.Fliplr(1),
+        #         imgaug.augmenters.Flipud(1),
+        #         imgaug.augmenters.Affine(rotate=(-45, 45)),
+        #         imgaug.augmenters.Affine(rotate=(-90, 90)),
+        #         imgaug.augmenters.Affine(scale=(0.5, 1.5)),
+        #         imgaug.augmenters.Crop(px=(0, 10)),
+        #         imgaug.augmenters.Grayscale(alpha=(0.0, 1.0)),
+        #         imgaug.augmenters.AddToHueAndSaturation((-20, 20)),
+        #         imgaug.augmenters.Add((-10, 10), per_channel=0.5),
+        #         imgaug.augmenters.Invert(0.05, per_channel=True),
+        #         imgaug.augmenters.Sharpen(alpha=(0, 1.0), lightness=(0.75, 1.5)),
+        #     ]
+        # ),
     )
 
 
